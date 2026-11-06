@@ -1,0 +1,92 @@
+@mixin style-carte {
+    padding: $espace-moyen;
+    border-radius: $arrondi-carte;
+}
+// Couleurs
+$rose-fond: #FFF5F8;
+$rose-clair: #F8DCE8;
+$rose-principal: #D982A8;
+$rose-fonce: #C76D96;
+$texte: #59434D;
+$blanc-rose: #FFFAFC;
+
+// Espacements
+$espace-petit: 15px;
+$espace-moyen: 30px;
+$espace-grand: 50px;
+
+// Arrondis
+$arrondi-carte: 18px;
+$arrondi-bouton: 8px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: $texte;
+}
+
+.catalogue {
+    background-color: $rose-fond;
+    min-height: 860px;
+    margin: $espace-grand auto;
+    width: 86%;
+    padding: $espace-grand 8%;
+}
+
+.sur-titre {
+    font-size: 16px;
+    margin-bottom: $espace-moyen;
+}
+
+h1 {
+    color: $rose-principal;
+    font-size: 36px;
+    margin-bottom: $espace-petit;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: $espace-grand;
+}
+
+.carte {
+    background-color: $blanc-rose;
+    width: 330px;
+    padding: $espace-moyen;
+    border-radius: $arrondi-carte;
+}
+
+.carte h2 {
+    color: $texte;
+    font-size: 24px;
+    margin-top: $espace-petit;
+    margin-bottom: $espace-petit;
+}
+
+.carte p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: $espace-petit;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: $rose-principal;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: $arrondi-bouton;
+    font-weight: bold;
+}
+
+.bouton:hover {
+    background-color: $rose-fonce;
+}
+.information {
+    background-color: $rose-clair;
+    @include style-carte;
+}

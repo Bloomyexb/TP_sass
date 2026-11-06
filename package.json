@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  
+"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "v:sass": "sass --version"
-  },
+    "v:sass": "sass --version",
+    "compile:sass": "sass src/styles.scss css/styles.css"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
